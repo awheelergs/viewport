@@ -1,0 +1,44 @@
+#wrapper {
+    /* Add empty space at top and bottom of div between the div content 
+       area and border. We will put the header and footer in this empty
+       space. */
+    padding: 50px 0; /* Same as 50px 0px 50px 0px */
+    /* Below forces all sides to zero distance from the viewport edges. */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#header {
+    /* Fixed height header with top shifted into the wrapper padding. */
+    margin-top: -50px;
+    height: 50px;
+    background-color: red;
+}
+
+#content {
+    /* Force the content div to always fill the viewport. */
+    min-height: 100%;
+    background-color: green;
+}
+
+#footer {
+    /* Fixed height footer with bottom shifted into the wrapper padding. */
+    margin-bottom: -50px;
+    height: 50px;
+    background-color: red;
+}
+
+#header, #footer {
+    /* Center the text. */
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    /* Paragraph margins cause a problem, so remove them. */
+    margin: 0em;
+    padding: 0.5em 0em 0em 0em;
+}
